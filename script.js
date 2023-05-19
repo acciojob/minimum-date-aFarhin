@@ -1,6 +1,14 @@
 function minDate(dates) {
-  //write you code here
+  // Create a copy of the input array to avoid modifying the original array
+  var sortedDates = dates.slice();
+
+  // Sort the array in ascending order
+  sortedDates.sort();
+
+  // Return the first element (minimum date) from the sorted array
+  return sortedDates[0];
 }
+
 
 // Do not change the code
 
